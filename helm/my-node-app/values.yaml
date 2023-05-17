@@ -1,0 +1,14 @@
+image:
+  repository: your-docker-image
+  tag: latest
+
+service:
+  type: ClusterIP
+  port: 3000
+
+ingress:
+  enabled: false
+  annotations: {}
+  hosts:
+    - host: your-domain.com
+      path: /
